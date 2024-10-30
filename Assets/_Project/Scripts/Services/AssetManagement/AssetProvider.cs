@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using UnityEngine;
 using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using Zenject;
@@ -18,6 +19,9 @@ namespace _Project.Scripts.Services.AssetManagement
 
         public void Dispose() => 
             Release();
+
+        public async Task<Sprite> LoadAssetReferenceSprite(AssetReferenceSprite sprite) =>
+            await Load<Sprite>(sprite.RuntimeKey.ToString());
 
         public async Task<T> Load<T>(string key) where T : class
         {
@@ -40,6 +44,9 @@ namespace _Project.Scripts.Services.AssetManagement
 
             return await handle.Task;
         }
+
+        public void Release(AssetReferenceSprite sprite) 
+            => Release(sprite.RuntimeKey.ToString());
 
         public void Release(string key)
         {

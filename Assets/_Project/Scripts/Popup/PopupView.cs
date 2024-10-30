@@ -14,6 +14,7 @@ namespace _Project.Scripts.Popup
         [SerializeField] private TextMeshProUGUI _newPrice;
         [SerializeField] private TextMeshProUGUI _oldPrice;
         [SerializeField] private TextMeshProUGUI _discount;
+        [SerializeField] private Image _mainImage;
 
         private PopupController _controller;
 
@@ -35,13 +36,15 @@ namespace _Project.Scripts.Popup
             _buyButton.onClick.RemoveAllListeners();
         }
 
-        public void Draw(string header, string description, float newPrice, float oldPrice, int discount)
+        public void Draw(string header, string description, Sprite mainSprite)
         {
-            _header.text = header.ToUpper();
+            _header.text = header;
             _description.text = description;
-            _newPrice.text = $"${newPrice}";
-            _oldPrice.text = $"<s>$ {oldPrice}</s>";
-            _discount.text = $"{discount}%";
+            _mainImage.sprite = mainSprite;
+
+            // _newPrice.text = $"${newPrice}";
+            // _oldPrice.text = $"<s>$ {oldPrice}</s>";
+            // _discount.text = $"{discount}%";
         }
 
         public void SwitchPopupRender(bool condition) =>

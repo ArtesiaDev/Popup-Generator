@@ -1,0 +1,105 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Goods
+  m_EditorClassIdentifier: 
+  m_GroupName: Goods
+  m_Data:
+    m_SerializedData: []
+  m_GUID: d2bb1128f99b1df49b86e1ef80366717
+  m_SerializeEntries:
+  - m_GUID: 10876d86c0d0c7948ab7c3f219be6325
+    m_Address: Bottle_blue
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: c257574b1b8ee104582a93ecac457485
+    m_Address: Bottle_standard
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 0edcb30428af9c34b9114c75ee984bf2
+    m_Address: Bottle_green
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 1200fd4c89ff9654483fdc0805358f5e
+    m_Address: Diamond
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a0c46bd0ce09e0d479ad2962809f906f
+    m_Address: Gold_bars
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 93b5b28db06f8d2439c780ec3aeb28d2
+    m_Address: Gold_coins
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 68fba0368e8dc8842ad10756647eee14
+    m_Address: Key_silver
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 17140e59711297c47b6438d2a2328e20
+    m_Address: Leafs_long
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 6270d46c6c1104b448fb5bac5bede74d
+    m_Address: Mushroom
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: b54b94da5cee5c046bf327246ac181e6
+    m_Address: Pickaxe
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 098c04e31cd452146be0441cc6f3ae86
+    m_Address: Pouch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: a7fa02c269abaed47bd3a49986381846
+    m_Address: Ring
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: e78313c7d47aeb845aee79d5bc8d26c5
+    m_Address: Silver_bars
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 401e0dc6359ba784fbe939a1148487cf
+    m_Address: Silver_coins
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 583675a75bcb2a941ac555b9ccd513a9
+    m_Address: Stone
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 4f83da16a2d475f42a8fb81cd908c3fd
+    m_Address: Twig
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 63af52b5b92b10c4594f1085a1a0ab94
+    m_Address: Wood_logs
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 65c59ccc59b5690458cb9e5324edc5dc
+    m_Address: Wood_log
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: aa8016ffea155e94aa7ed0534e64d67b
+    m_Address: Wood_log_birch
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 985522aa310769847adff8a288ac92ca
+    m_Address: Wood_stick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: ca90411c008a69442a6c05bf21ee6684, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: fc1f7aa82790f3045814e6deb95ad564, type: 2}
+    - {fileID: 11400000, guid: 179c774d988cfff4b85160036cd4b373, type: 2}

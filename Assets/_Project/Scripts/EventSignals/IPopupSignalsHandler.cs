@@ -2,6 +2,8 @@
 {
     public interface IPopupSignalsHandler
     {
-        public void OnPopupPurchased();
+        void OnPopupPurchased(); 
+        void OnPopupGenerating();
+        void OnPopupClosed();
     }
 }

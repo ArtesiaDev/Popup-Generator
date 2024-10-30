@@ -8,7 +8,7 @@ namespace _Project.Scripts.Installers
     {
         public override void InstallBindings()
         {
-            Container.BindInterfacesTo<AssetProvider>().AsSingle();
+            Container.BindInterfacesTo<AssetProvider>().AsSingle().NonLazy();
             Container.BindInterfacesTo<PopupSignals>().AsSingle();
         }
     }
