@@ -2,6 +2,7 @@
 using _Project.Scripts.EventSignals;
 using _Project.Scripts.Generation;
 using Zenject;
+using Object = UnityEngine.Object;
 
 namespace _Project.Scripts.Popup
 {
@@ -41,22 +42,25 @@ namespace _Project.Scripts.Popup
 
         public void ClosePopup()
         {
-            _view.SwitchPopupRender(false);
             PopupClosed?.Invoke();
+            Object.Destroy(_view.gameObject);
+            _creator.gameObject.SetActive(false);
         }
 
         public void MakePurchase()
         {
             PopupPurchased?.Invoke();
-            _view.SwitchPopupRender(false);
+            Object.Destroy(_view.gameObject);
+            _creator.gameObject.SetActive(false);
         }
 
         private async void GeneratePopup()
         {
+            _creator.gameObject.SetActive(true);
             _model = await _creator.CreatePopup();
             _view = _creator.Popup;
             var mainSprite = await _creator.CreateSprite();
-            _view.Draw(_model.HeaderText.ToUpper(), _model.DescriptionText, mainSprite);
+            _view.Draw(_model.HeaderText.ToUpper(), _model.DescriptionText, mainSprite, _model.PriceData);
         }
     }
 }

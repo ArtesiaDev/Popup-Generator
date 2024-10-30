@@ -9,7 +9,9 @@ namespace _Project.Scripts.Configs
         [field: SerializeField] public string HeaderText { get; private set; }
         [field: SerializeField] public string DescriptionText { get; private set; }
         [field: SerializeField] public AssetReferenceSprite MainImage { get; private set; }
-      //  [field: SerializeField] public RewardItem[] RewardItems => rewardItems;
-      //  [field: SerializeField] public PriceData PriceData => priceData;
+
+        [field: SerializeField] public PriceData PriceData { get; private set; }
+
+        //  [field: SerializeField] public RewardItem[] RewardItems => rewardItems;
     }
 }

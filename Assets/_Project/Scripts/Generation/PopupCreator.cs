@@ -22,12 +22,11 @@ namespace _Project.Scripts.Generation
 
         public PopupView Popup { get; private set; }
 
-        private async void Start()
+        private async void OnEnable()
         {
             await _spriteFactory.Prepare(_config.MainImage);
             await _popupFactory.Prepare();
             _canvas = gameObject.GetComponent<RectTransform>();
-            Debug.Log("Creator Start");
         }
 
         private void OnDisable()
@@ -39,7 +38,7 @@ namespace _Project.Scripts.Generation
         public async Task<PopupModel> CreatePopup()
         {
             Popup = await _popupFactory.Create(_canvas, _canvas.localPosition);
-            return new PopupModel(_config.HeaderText, _config.DescriptionText, _config.MainImage);
+            return new PopupModel(_config.HeaderText, _config.DescriptionText, _config.MainImage, _config.PriceData);
         }
 
         public async Task<Sprite> CreateSprite() => 

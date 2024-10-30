@@ -1,4 +1,5 @@
-﻿using TMPro;
+﻿using _Project.Scripts.Configs;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
@@ -36,18 +37,14 @@ namespace _Project.Scripts.Popup
             _buyButton.onClick.RemoveAllListeners();
         }
 
-        public void Draw(string header, string description, Sprite mainSprite)
+        public void Draw(string header, string description, Sprite mainSprite, PriceData priceData)
         {
             _header.text = header;
             _description.text = description;
             _mainImage.sprite = mainSprite;
-
-            // _newPrice.text = $"${newPrice}";
-            // _oldPrice.text = $"<s>$ {oldPrice}</s>";
-            // _discount.text = $"{discount}%";
+            _newPrice.text = $"${priceData.NewPrice}"; 
+            _oldPrice.text = $"<s>$ {priceData.OldPrice}</s>";
+            _discount.text = $"{priceData.Discount}%";
         }
-
-        public void SwitchPopupRender(bool condition) =>
-            gameObject.SetActive(condition);
     }
 }
