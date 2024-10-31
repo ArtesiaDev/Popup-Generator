@@ -1,8 +1,8 @@
-﻿using _Project.Scripts.EventSignals;
-using _Project.Scripts.Services.AssetManagement;
+﻿using Scripts.EventSignals;
+using Scripts.Services.AssetManagement;
 using Zenject;
 
-namespace _Project.Scripts.Installers
+namespace Scripts.Installers
 {
     public class ProjectContextInstaller: MonoInstaller
     {

@@ -1,8 +1,8 @@
 ﻿using System;
-using _Project.Scripts.EventSignals;
+using Scripts.EventSignals;
 using Zenject;
 
-namespace _Project.Scripts.Popup
+namespace Scripts.Popup
 {
     public class UIController: IInitializable, IDisposable
     {

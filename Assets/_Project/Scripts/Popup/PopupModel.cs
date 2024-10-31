@@ -1,7 +1,7 @@
-﻿using _Project.Scripts.Configs;
+﻿using Scripts.Configs;
 using UnityEngine.AddressableAssets;
 
-namespace _Project.Scripts.Popup
+namespace Scripts.Popup
 {
     public class PopupModel
     {
@@ -9,8 +9,6 @@ namespace _Project.Scripts.Popup
         public string DescriptionText { get; private set; }
         public AssetReferenceSprite MainImage { get; private set; }
         public PriceData PriceData { get; private set; }
-        
-        //  [field: SerializeField] public RewardItem[] RewardItems => rewardItems;
 
         public PopupModel(string headerText, string descriptionText, AssetReferenceSprite mainSprite, PriceData priceData)
         {

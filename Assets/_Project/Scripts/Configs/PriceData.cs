@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace _Project.Scripts.Configs
+namespace Scripts.Configs
 {
     [Serializable]
     public struct PriceData

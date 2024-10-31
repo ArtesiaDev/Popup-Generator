@@ -22,7 +22,7 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: c257574b1b8ee104582a93ecac457485
-    m_Address: Bottle_standard
+    m_Address: Bottle_empty
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 0edcb30428af9c34b9114c75ee984bf2
@@ -42,11 +42,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 68fba0368e8dc8842ad10756647eee14
-    m_Address: Key_silver
+    m_Address: Key
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 17140e59711297c47b6438d2a2328e20
-    m_Address: Leafs_long
+    m_Address: Leafs
     m_ReadOnly: 0
     m_SerializedLabels: []
   - m_GUID: 6270d46c6c1104b448fb5bac5bede74d
@@ -95,6 +95,10 @@ MonoBehaviour:
     m_SerializedLabels: []
   - m_GUID: 985522aa310769847adff8a288ac92ca
     m_Address: Wood_stick
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 3edca54f1857b8e4ba720871e4d0f151
+    m_Address: Stone_blocks
     m_ReadOnly: 0
     m_SerializedLabels: []
   m_ReadOnly: 0

@@ -2,7 +2,7 @@
 using UnityEngine.UI;
 using Zenject;
 
-namespace _Project.Scripts.Popup
+namespace Scripts.Popup
 {
     public class UIView : MonoBehaviour
     {
@@ -12,10 +12,8 @@ namespace _Project.Scripts.Popup
         private UIController _controller;
 
         [Inject]
-        private void Construct(UIController controller)
-        {
+        private void Construct(UIController controller) =>
             _controller = controller;
-        }
 
         private void OnEnable()
         {
@@ -23,10 +21,8 @@ namespace _Project.Scripts.Popup
             _purchaseMessage.onClick.AddListener(_controller.ClosePurchaseMessage);
         }
 
-        private void OnDisable()
-        {
+        private void OnDisable() =>
             _generateButton.onClick.RemoveAllListeners();
-        }
 
 
         public void SwitchPurchaseMessageRendering(bool condition) =>

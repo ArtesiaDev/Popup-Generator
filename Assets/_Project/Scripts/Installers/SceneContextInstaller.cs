@@ -1,9 +1,10 @@
-﻿using _Project.Scripts.Generation;
-using _Project.Scripts.Popup;
+﻿using Scripts.Generation;
+using Scripts.Goods;
+using Scripts.Popup;
 using UnityEngine;
 using Zenject;
 
-namespace _Project.Scripts.Installers
+namespace Scripts.Installers
 {
     public class SceneContextInstaller : MonoInstaller
     {
@@ -16,8 +17,10 @@ namespace _Project.Scripts.Installers
             Container.BindInterfacesAndSelfTo<UIController>().AsSingle();
             
             Container.BindInterfacesAndSelfTo<PopupController>().AsSingle();
+            Container.BindInterfacesAndSelfTo<GoodsController>().AsSingle();
 
             Container.Bind<PopupFactory>().AsSingle().NonLazy();
+            Container.Bind<GoodsFactory>().AsSingle().NonLazy();
             Container.Bind<SpriteFactory>().AsSingle().NonLazy();
             Container.Bind<PopupCreator>().FromInstance(_popupCreator).AsSingle();
         }

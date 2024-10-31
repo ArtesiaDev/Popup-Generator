@@ -1,10 +1,10 @@
-﻿using _Project.Scripts.Configs;
+﻿using Scripts.Configs;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using Zenject;
 
-namespace _Project.Scripts.Popup
+namespace Scripts.Popup
 {
     public class PopupView : MonoBehaviour
     {
@@ -20,10 +20,11 @@ namespace _Project.Scripts.Popup
         private PopupController _controller;
 
         [Inject]
-        private void Construct(PopupController controller)
-        {
+        private void Construct(PopupController controller) =>
             _controller = controller;
-        }
+        
+        [field: SerializeField] public Transform TopRowLayout { get; private set; }
+        [field: SerializeField] public Transform BottomRowLayout { get; private set; }
 
         private void OnEnable()
         {

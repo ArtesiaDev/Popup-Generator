@@ -7,7 +7,7 @@ using UnityEngine.AddressableAssets;
 using UnityEngine.ResourceManagement.AsyncOperations;
 using Zenject;
 
-namespace _Project.Scripts.Services.AssetManagement
+namespace Scripts.Services.AssetManagement
 {
     public class AssetProvider : IAssetProvider, IInitializable, IDisposable
     {
@@ -31,8 +31,8 @@ namespace _Project.Scripts.Services.AssetManagement
             }
 
             var handle = Addressables.LoadAssetAsync<T>(key);
-            handle.Completed += asyncOperationHandle => 
-                { _cache[key] = asyncOperationHandle; };
+             handle.Completed += asyncOperationHandle => 
+                 { _cache[key] = asyncOperationHandle; };
 
             if (!_handles.TryGetValue(key, out var handles))
             {
@@ -63,9 +63,7 @@ namespace _Project.Scripts.Services.AssetManagement
         private void Release()
         {
             foreach (var handle in _handles.Values.SelectMany(list => list))
-            {
                 Addressables.Release(handle);
-            }
 
             _cache.Clear();
             _handles.Clear();

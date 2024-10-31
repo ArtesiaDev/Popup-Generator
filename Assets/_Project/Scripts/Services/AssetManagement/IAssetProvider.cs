@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.AddressableAssets;
 
-namespace _Project.Scripts.Services.AssetManagement
+namespace Scripts.Services.AssetManagement
 {
     public interface IAssetProvider
     {

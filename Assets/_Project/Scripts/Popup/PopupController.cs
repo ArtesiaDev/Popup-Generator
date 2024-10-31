@@ -1,15 +1,16 @@
 ﻿using System;
-using _Project.Scripts.EventSignals;
-using _Project.Scripts.Generation;
+using Scripts.EventSignals;
+using Scripts.Generation;
 using Zenject;
 using Object = UnityEngine.Object;
 
-namespace _Project.Scripts.Popup
+namespace Scripts.Popup
 {
     public class PopupController : IInitializable, IDisposable
     {
         public event Action PopupPurchased;
         public event Action PopupClosed;
+        public event Action PopupGenerated;
 
         private IPopupSignals _popupSignals;
         private IPopupSignalsHandler _signalsHandler;
@@ -30,6 +31,7 @@ namespace _Project.Scripts.Popup
         {
             PopupPurchased += _signalsHandler.OnPopupPurchased;
             PopupClosed += _signalsHandler.OnPopupClosed;
+            PopupGenerated += _signalsHandler.OnPopupGenerated;
             _popupSignals.PopupGenerating += GeneratePopup;
         }
 
@@ -37,6 +39,7 @@ namespace _Project.Scripts.Popup
         {
             PopupPurchased -= _signalsHandler.OnPopupPurchased;
             PopupClosed -= _signalsHandler.OnPopupClosed;
+            PopupGenerated -= _signalsHandler.OnPopupGenerated;
             _popupSignals.PopupGenerating -= GeneratePopup;
         }
 
@@ -59,7 +62,8 @@ namespace _Project.Scripts.Popup
             _creator.gameObject.SetActive(true);
             _model = await _creator.CreatePopup();
             _view = _creator.Popup;
-            var mainSprite = await _creator.CreateSprite();
+            PopupGenerated?.Invoke();
+            var mainSprite = await _creator.CreateSprite(_model.MainImage);
             _view.Draw(_model.HeaderText.ToUpper(), _model.DescriptionText, mainSprite, _model.PriceData);
         }
     }
