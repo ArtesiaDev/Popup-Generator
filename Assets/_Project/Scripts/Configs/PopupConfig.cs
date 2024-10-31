@@ -10,6 +10,7 @@ namespace Scripts.Configs
         [field: SerializeField] public string DescriptionText { get; private set; }
         [field: SerializeField] public AssetReferenceSprite MainImage { get; private set; }
         [field: SerializeField] public PriceData PriceData { get; private set; }
-        [field: SerializeField] public GoodsData[] GoodsData { get; private set; }
+
+        [SerializeField] public GoodsData[] GoodsData;
     }
 }
