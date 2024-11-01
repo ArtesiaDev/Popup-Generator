@@ -1,4 +1,5 @@
-﻿using System.Threading.Tasks;
+﻿using System;
+using System.Threading.Tasks;
 using Scripts.Configs;
 using Scripts.Goods;
 using Scripts.Popup;
@@ -30,6 +31,9 @@ namespace Scripts.Generation
         public GoodsView Goods { get; private set; }
         public int GoodsLength => _config.GoodsData.Length;
 
+        private void Awake() =>
+            _canvas = gameObject.GetComponent<RectTransform>();
+
         private async void OnEnable()
         {
             await _spriteFactory.Prepare(_config.MainImage);
@@ -41,7 +45,6 @@ namespace Scripts.Generation
 
             await _popupFactory.Prepare();
             await _goodsFactory.Prepare();
-            _canvas = gameObject.GetComponent<RectTransform>();
         }
 
         private void OnDisable()
@@ -60,9 +63,6 @@ namespace Scripts.Generation
 
         public async Task<PopupModel> CreatePopup()
         {
-            while (_canvas == null)
-                await Task.Delay(50);
-
             Popup = await _popupFactory.Create(_canvas, _canvas.localPosition);
             return new PopupModel(_config.HeaderText, _config.DescriptionText, _config.MainImage, _config.PriceData);
         }
@@ -71,8 +71,8 @@ namespace Scripts.Generation
         {
             Goods = await _goodsFactory.Create(parentRow);
             var model = new GoodsModel(_config.GoodsData[_currentGoods]);
+            
             _currentGoods++;
-
             return model;
         }
 
