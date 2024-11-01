@@ -1,4 +1,5 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Scripts.Configs
 {
@@ -7,6 +8,6 @@ namespace Scripts.Configs
     {
         public float NewPrice;
         public float OldPrice;
-        public int Discount => (int)(100 - ((NewPrice * 100) / OldPrice));
+        public int Discount => (int)Mathf.Ceil(100 - (NewPrice * 100 / OldPrice));
     }
 }

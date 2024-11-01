@@ -200,7 +200,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _uIView: {fileID: 2078128669}
-  _popupView: {fileID: 0}
   _popupCreator: {fileID: 974673317}
 --- !u!1 &483759809
 GameObject:
@@ -738,7 +737,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 25
+  m_AdditionalShaderChannelsFlag: 0
   m_SortingLayerID: 0
   m_SortingOrder: 4
   m_TargetDisplay: 0
@@ -773,7 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9c768e0be8c2486dbfb79622f2658deb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _config: {fileID: 11400000, guid: 474af00c47de46840a4ade409f3697da, type: 2}
+  _config: {fileID: 11400000, guid: 61d253b473b416d459bd6d0fc732986b, type: 2}
 --- !u!1 &1301718261
 GameObject:
   m_ObjectHideFlags: 0

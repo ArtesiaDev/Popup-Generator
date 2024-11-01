@@ -26,38 +26,16 @@ MonoBehaviour:
   <PriceData>k__BackingField:
     NewPrice: 3.99
     OldPrice: 6
-  <GoodsData>k__BackingField:
-  - GoodsConfig: {fileID: 11400000, guid: 4fe1034e3f60bb34e980f9878c3b5a3f, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: def962d8503c0f246aaab94b3c9de779, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: 4c949a2c315ed714a9cbe65f6854d4f0, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: fdf75cd120ea5eb4f85fe08f0240c01e, type: 2}
-    Count: 900
+  GoodsData:
   - GoodsConfig: {fileID: 11400000, guid: a0018b100827f2d45bf20e87065436fa, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: db2afd0a45d27bf4998062431516a2ee, type: 2}
-    Count: 900
+    Count: 20
   - GoodsConfig: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
-    Count: 900
+    Count: 40
   - GoodsConfig: {fileID: 11400000, guid: cb0ebe3e2b410a644b6d4025a8c1bf96, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: 6be329437dcfbcc4986a1ee5ed0f2e6b, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: 8034a17e6cbaff64bad0555b699e0a73, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: 4fe1034e3f60bb34e980f9878c3b5a3f, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: 4c22565ea516e3a429662d0c7d5d465f, type: 2}
-    Count: 900
+    Count: 40
+  - GoodsConfig: {fileID: 11400000, guid: fdf75cd120ea5eb4f85fe08f0240c01e, type: 2}
+    Count: 20
   - GoodsConfig: {fileID: 11400000, guid: def962d8503c0f246aaab94b3c9de779, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: db2afd0a45d27bf4998062431516a2ee, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: db2afd0a45d27bf4998062431516a2ee, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: db2afd0a45d27bf4998062431516a2ee, type: 2}
-    Count: 900
-  - GoodsConfig: {fileID: 11400000, guid: db2afd0a45d27bf4998062431516a2ee, type: 2}
-    Count: 900
+    Count: 20
+  - GoodsConfig: {fileID: 11400000, guid: 047e26ca5cb6bfe47ae65a689c6cd350, type: 2}
+    Count: 10
