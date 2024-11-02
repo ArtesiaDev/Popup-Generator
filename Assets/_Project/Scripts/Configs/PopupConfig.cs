@@ -11,6 +11,6 @@ namespace Scripts.Configs
         [field: SerializeField] public AssetReferenceSprite MainImage { get; private set; }
         [field: SerializeField] public PriceData PriceData { get; private set; }
 
-        [SerializeField] public GoodsData[] GoodsData;
+        public GoodsData[] GoodsData; //CustomEditor
     }
 }

@@ -24,18 +24,18 @@ MonoBehaviour:
       Culture=neutral, PublicKeyToken=null
     m_EditorAssetChanged: 0
   <PriceData>k__BackingField:
-    NewPrice: 2.99
-    OldPrice: 3.33
+    <NewPrice>k__BackingField: 2
+    <OldPrice>k__BackingField: 3.33
   GoodsData:
-  - GoodsConfig: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
-    Count: 50
-  - GoodsConfig: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
-    Count: 50
-  - GoodsConfig: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
-    Count: 50
-  - GoodsConfig: {fileID: 11400000, guid: 53ee7283520c7be479c29f39e128bfe3, type: 2}
-    Count: 30
-  - GoodsConfig: {fileID: 11400000, guid: 53ee7283520c7be479c29f39e128bfe3, type: 2}
-    Count: 30
-  - GoodsConfig: {fileID: 11400000, guid: 53ee7283520c7be479c29f39e128bfe3, type: 2}
-    Count: 30
+  - <GoodsConfig>k__BackingField: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
+    <Count>k__BackingField: 50
+  - <GoodsConfig>k__BackingField: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
+    <Count>k__BackingField: 50
+  - <GoodsConfig>k__BackingField: {fileID: 11400000, guid: 2cf1e28d8bf403f4bb2aec9c58b3de11, type: 2}
+    <Count>k__BackingField: 50
+  - <GoodsConfig>k__BackingField: {fileID: 11400000, guid: 53ee7283520c7be479c29f39e128bfe3, type: 2}
+    <Count>k__BackingField: 30
+  - <GoodsConfig>k__BackingField: {fileID: 11400000, guid: 53ee7283520c7be479c29f39e128bfe3, type: 2}
+    <Count>k__BackingField: 30
+  - <GoodsConfig>k__BackingField: {fileID: 11400000, guid: 53ee7283520c7be479c29f39e128bfe3, type: 2}
+    <Count>k__BackingField: 30

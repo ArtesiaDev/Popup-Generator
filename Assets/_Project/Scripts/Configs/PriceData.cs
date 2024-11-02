@@ -6,8 +6,8 @@ namespace Scripts.Configs
     [Serializable]
     public struct PriceData
     {
-        public float NewPrice;
-        public float OldPrice;
+        [field: SerializeField] public float NewPrice { get; private set; }
+        [field: SerializeField] public float OldPrice { get; private set; }
         public int Discount => (int)Mathf.Ceil(100 - (NewPrice * 100 / OldPrice));
     }
 }

@@ -1,11 +1,12 @@
 ﻿using System;
+using UnityEngine;
 
 namespace Scripts.Configs
 {
     [Serializable]
     public struct GoodsData
     {
-        public GoodsConfig GoodsConfig;
-        public int Count;
+        [field: SerializeField] public GoodsConfig GoodsConfig { get; private set; }
+        [field: SerializeField] public int Count { get; private set; }
     }
 }
