@@ -15,19 +15,21 @@ MonoBehaviour:
   m_GroupName: Prefabs
   m_Data:
     m_SerializedData: []
-  m_GUID: a8039b9898b21fd43a3c6fbbf57433e5
+  m_GUID: 6acdb4a8ee591614f9e1db856567aa7c
   m_SerializeEntries:
   - m_GUID: 9a62ffce58de5834891b28d3f071f2e8
     m_Address: Popup
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   - m_GUID: 574d9c3a7c6ecd44baa8b254787d7396
     m_Address: GoodsElement
     m_ReadOnly: 0
     m_SerializedLabels: []
+    FlaggedDuringContentUpdateRestriction: 0
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: ca90411c008a69442a6c05bf21ee6684, type: 2}
   m_SchemaSet:
     m_Schemas:
-    - {fileID: 11400000, guid: 876bcac63bf5f4240af0f2cdf6d95d82, type: 2}
-    - {fileID: 11400000, guid: ce8e09fd7c444bf4a8ca9817fa94c80e, type: 2}
+    - {fileID: 11400000, guid: 45a202c7522757545acc5db674351429, type: 2}
+    - {fileID: 11400000, guid: c84bdfd0584e83245a77e4ccae57c959, type: 2}

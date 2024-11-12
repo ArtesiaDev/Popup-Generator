@@ -17,7 +17,7 @@ MonoBehaviour:
     m_SubObjectName: Bottle_blue
     m_SubObjectType: UnityEngine.Sprite, UnityEngine.CoreModule, Version=0.0.0.0,
       Culture=neutral, PublicKeyToken=null
-    m_EditorAssetChanged: 0
+    m_EditorAssetChanged: 1
   <BackgroundIcon>k__BackingField:
     m_AssetGUID: 286f20e1602d37e47831fde6255f5390
     m_SubObjectName: Backgrounds_black
